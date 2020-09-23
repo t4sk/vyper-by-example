@@ -4,9 +4,14 @@ Learn Vyper by examples
 https://vyper.readthedocs.io/
 
 ### Topics
-- Install vyper? Remix setup
-- Hello World
-- structure of a contract (version pragma, state variables, functions, events, interfaces, structs)
+- Intrp
+  - what is Vyper
+  - how does it compare to Solidity
+  - what are some projects using Vyper
+  - Install vyper (optional)
+  - Remix setup
+  - Hello World
+  - structure of a contract (version pragma, state variables, functions, events, interfaces, structs)
 - types
   - value types
     - initial values
