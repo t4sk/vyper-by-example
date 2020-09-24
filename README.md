@@ -1,9 +1,11 @@
 # vyper-by-example
+
 Learn Vyper by examples
 
 https://vyper.readthedocs.io/
 
 ### Topics
+
 - Intrp
   - what is Vyper
   - how does it compare to Solidity
@@ -30,8 +32,8 @@ https://vyper.readthedocs.io/
   - multiple returns and tuple assignment
   - reentrancy lock
   - send ether
-  - __default__
-  - __init__
+  - **default**
+  - **init**
 - variable scope, public variable, shadowing
 - built in functions
   - create forwarder to
@@ -53,5 +55,22 @@ https://vyper.readthedocs.io/
 - event logging
 - natspec
 - testing (frame work)
- 
-  
+
+# Install Vyper
+
+```shell
+# install virtualenv
+python3 -m pip install --user virtualenv
+virtualenv -p python3 venv
+source venv/bin/activate
+
+# install vyper
+pip install vyper
+```
+
+# Vyper
+
+```shell
+# compile
+vyper myContract.vy
+```
