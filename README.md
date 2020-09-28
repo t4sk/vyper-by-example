@@ -6,18 +6,19 @@ https://vyper.readthedocs.io/
 
 ### Topics
 
-- Intrp
+- Intro
   - what is Vyper
   - how does it compare to Solidity
   - what are some projects using Vyper
   - Install vyper (optional)
   - Remix setup
   - Hello World
-  - structure of a contract (version pragma, state variables, functions, events, interfaces, structs)
 - types
   - value types
+    - copy behaviour
     - initial values
   - reference types
+    - array, mapping, structs
     - initial values
   - type conversion
 - environment variables (block.timestamp, msg.gas, msg.sender, msg.value, ...)
