@@ -19,14 +19,7 @@ https://vyper.readthedocs.io/
     - initial values
   - reference types
     - array, mapping, structs
-    - initial values
-  - type conversion
-- environment variables (block.timestamp, msg.gas, msg.sender, msg.value, ...)
-- state variables
-- constants (built in, custom)
-- control flow
-  - if, for loops (range, for a in array), break, continue, pass, return
-- Assertions and exceptions - raise, assert
+- state variables and self
 - function
   - visibility
   - mutability
@@ -36,6 +29,10 @@ https://vyper.readthedocs.io/
   - **default**
   - **init**
 - variable scope, public variable, shadowing
+- constants (built in, custom)
+- control flow
+  - if, for loops (range, for a in array), break, continue, pass, return
+- Assertions and exceptions - raise, assert
 - built in functions
   - create forwarder to
   - raw_call
