@@ -24,9 +24,9 @@ https://vyper.readthedocs.io/
   - visibility
   - mutability
   - multiple returns and tuple assignment
-  - reentrancy lock
   - send ether
   - **default**
+  - reentrancy lock
   - **init**
 - variable scope, public variable, shadowing
 - constants (built in, custom)
