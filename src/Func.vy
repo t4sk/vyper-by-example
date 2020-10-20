@@ -9,6 +9,12 @@ message: public(String[10])
 value: public(uint256)
 owner: public(address)
 
+@external
+@payable
+def __init__():
+    self.owner = msg.sender
+    self.value = msg.value
+
 # basic example
 @external
 @pure
