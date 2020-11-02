@@ -19,17 +19,15 @@ https://vyper.readthedocs.io/
     - initial values
   - reference types
     - array, mapping, structs
-- state variables and self
 - function
   - visibility
   - mutability
   - multiple returns and tuple assignment
   - send ether
   - **default**
-  - reentrancy lock
+  - TODO reentrancy lock
   - **init**
-- variable scope, public variable, shadowing
-- constants (built in, custom)
+- state variables, public, private, shadowing, constant, env variables (self.balance, msg.sender, msg.value, block.timestamp, tx.origin)
 - control flow
   - if, for loops (range, for a in array), break, continue, pass, return
 - Assertions and exceptions - raise, assert
