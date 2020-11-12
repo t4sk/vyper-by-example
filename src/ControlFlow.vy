@@ -1,13 +1,15 @@
 # @version ^0.2.0
 
+## Control flow ##
 # if else
 # for loop
 # break, continue, pass
 
-nums: public(uint256[5])
+nums: public(uint256[3])
 
 @external
 def __init__():
+    # nums = [1, 2, 3]
     self.nums[0] = 1
     self.nums[1] = 2
     self.nums[2] = 3
@@ -22,35 +24,35 @@ def ifElse(i: uint256) -> uint256:
     else:
         return 2
 
-# must be bounded at compile time
-# loop array literal
-# loop state variables
-# loop range
+# for loop (array literal, state variables, range)
 @external
 @view
-def forLoop() -> (uint256, uint256, uint256):
-    x: uint256 = 1
-    for i in [1,2,3]:
+def forLoop() -> (uint256, uint256, uint256, uint256):
+    x: uint256 = 0
+    for i in [1, 2, 3]:
         x += convert(i, uint256)
 
-    for i in self.nums:
-        x += i
-
     y: uint256 = 0
-    for i in range(10):
-        y += 1
+    for i in self.nums:
+        y += i
 
     z: uint256 = 0
+    for i in range(10):
+        z += 1
+
+    w: uint256 = 0
     for i in range(1, 10):
-        z = convert(i, uint256)
+        w = convert(i, uint256)
 
-    return (x, y, z)
 
+    return (x, y, z, w)
+
+# break, continue
 @external
 @pure
 def continueAndBreak() -> (uint256):
     x: uint256 = 0
-    for i in [1,2,3,4,5]:
+    for i in [1, 2, 3, 4, 5]:
         if i < 3:
             continue
         if i == 4:
@@ -58,6 +60,7 @@ def continueAndBreak() -> (uint256):
         x = convert(i, uint256)
     return x
 
+# pass
 @external
 def blank():
     pass
