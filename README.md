@@ -31,6 +31,7 @@ https://vyper.readthedocs.io/
 - control flow
   - if, for loops (range, for a in array), break, continue, pass, return
 - Assertions and exceptions - raise, assert
+- event logging
 - built in functions
   - create forwarder to
   - raw_call
@@ -48,7 +49,6 @@ https://vyper.readthedocs.io/
   - ERC20, ERC721
   - implements
   - extract interface
-- event logging
 - natspec
 - testing (frame work)
 
