@@ -5,6 +5,7 @@
 # error bubbles up
 # UNREACHABLE
 
+# assert and raise
 x: public(String[10])
 owner: public(address)
 
@@ -12,14 +13,11 @@ owner: public(address)
 def __init__():
     self.owner = msg.sender
 
-# assert and raise
-# state changes are reverted
 @internal
 def _setX(sender: address, _x: String[10]):
-    assert sender == self.owner, "not owner"
-    # same as assert
-    # if sender != self.owner:
-    #     raise "not owner"
+    # assert self.owner == sender, "!owner"
+    if self.owner != sender:
+        raise "!owner"
     self.x = _x
 
 @external
@@ -29,11 +27,10 @@ def setX(_x: String[10]):
 # error bubbles up
 @external
 def setXtoFoo():
-    self._setX(msg.sender, "Bar")
-    # this code will not be executed if the code above fails
-    self.x = "Foo"
+    self._setX(msg.sender, "Foo")
+    self.x = "Bar"
 
-# UNREACHABLE uses all gas
+# UNREACHABLE uses all of gas
 @external
 def unreachable():
     raise UNREACHABLE
