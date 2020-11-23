@@ -23,15 +23,15 @@ https://vyper.readthedocs.io/
   - visibility
   - mutability
   - multiple returns and tuple assignment
-  - send ether
   - **default**
-  - TODO reentrancy lock
   - **init**
 - state variables, public, private, shadowing, constant, env variables (self.balance, msg.sender, msg.value, block.timestamp, tx.origin)
 - control flow
   - if, for loops (range, for a in array), break, continue, pass, return
 - Assertions and exceptions - raise, assert
 - event logging
+- TODO send / receive ether
+- TODO reentrancy lock
 - built in functions
   - create forwarder to
   - raw_call
