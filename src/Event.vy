@@ -4,7 +4,7 @@
 Events
 - examples
     - user interface
-    - cheap storage
+    - cheap storage (cannot access inside smart contract)
 """
 
 event Transfer:
