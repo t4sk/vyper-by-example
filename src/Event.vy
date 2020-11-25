@@ -6,7 +6,6 @@ Events
     - user interface
     - cheap storage (cannot access inside smart contract)
 """
-
 # up to 3 indexed arguments
 event Transfer:
     sender: indexed(address)
@@ -22,7 +21,6 @@ authorized: public(HashMap[address, bool])
 @external
 def __init__():
     self.authorized[msg.sender] = True
-    log Authorized(msg.sender, True)
 
 @external
 def transfer(to: address, amount: uint256):
