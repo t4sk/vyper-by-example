@@ -30,11 +30,17 @@ https://vyper.readthedocs.io/
   - if, for loops (range, for a in array), break, continue, pass, return
 - Assertions and exceptions - raise, assert
 - event logging
-- TODO send / receive ether
-- TODO reentrancy lock
+- send / receive ether
+- interfaces
+  - declare
+  - import
+  - ERC20, ERC721
+  - implements
+  - extract interface
+- reentrancy lock
 - built in functions
   - create forwarder to
-  - raw_call
+  - raw_call, delegate_call
   - raw_log
   - self destruct
   - send
@@ -43,12 +49,6 @@ https://vyper.readthedocs.io/
   - concat
   - sqrt
   - method_id
-- interfaces
-  - declare
-  - import
-  - ERC20, ERC721
-  - implements
-  - extract interface
 - natspec
 - testing (frame work)
 

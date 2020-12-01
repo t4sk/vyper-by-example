@@ -1,17 +1,12 @@
 # @version ^0.2.0
 
 """
-- send Ether
+- send Ether from contract to another address
 - send
 - call (another video)
-- to @payable
+- @payable
 - send (2300 gas limit)
 """
-@external
-@payable
-def __init__():
-    pass
-
 # Ether is transfered from EOA -> this contract -> to address
 @external
 @payable

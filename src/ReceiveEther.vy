@@ -5,12 +5,6 @@
     - __default__
     - @payable
     - msg.sender, msg.value, self.balance
-- send Ether from contract to contract
-
-- receive Ether contract
-- send Ether to another contract
-- receive Ether in another contract
-- @reentrancy
 """
 
 event Payment:
