@@ -70,3 +70,16 @@ pip install vyper
 # compile
 vyper myContract.vy
 ```
+
+# Local compile in Remix
+
+```shell
+git clone https://github.com/jacqueswww/vyper-server.git
+cd vyper-server
+
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+python3 server.py
+```
