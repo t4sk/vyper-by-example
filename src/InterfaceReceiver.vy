@@ -1,9 +1,8 @@
 # @version ^0.2.0
 
 """
-interface
-- call other functions (nonpayable and view)
-- call other functions and send Ether
+interface (used for contract to contract interaction)
+- call other functions (view, non payable and payable)
 """
 
 event Log:
@@ -15,14 +14,14 @@ event Payment:
     amount: uint256
 
 @external
-def callMe(message: String[10]) -> uint256:
-    log Log(msg.sender, message)
-    return 123
-
-@external
 @view
 def getBalance() -> uint256:
     return self.balance
+
+@external
+def callMe(message: String[10]) -> uint256:
+    log Log(msg.sender, message)
+    return 123
 
 @external
 @payable
