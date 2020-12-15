@@ -2,16 +2,21 @@
 
 """
 interface (used for contract to contract interaction)
-- call other functions (view, non payable and payable)
+- call other functions (view, non payable and payable, func does not exist)
+- security
 """
 
 event Log:
     sender: indexed(address)
-    message: String[10]
+    message: String[100]
 
 event Payment:
     sender: indexed(address)
     amount: uint256
+
+@external
+def __default__():
+    log Log(msg.sender, "function does not exist")
 
 @external
 @view
