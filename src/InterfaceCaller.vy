@@ -6,18 +6,14 @@ interface Receiver:
     def pay(): payable
     def doesNotExist(): nonpayable
 
-event Log:
-    num: uint256
-
 @external
 @view
 def getBalanceOfReceiver(receiver: address) -> uint256:
     return Receiver(receiver).getBalance()
 
 @external
-def callReceiver(receiver: address, message: String[10]):
-    num: uint256 = Receiver(receiver).callMe(message)
-    log Log(num)
+def callReceiver(receiver: address):
+    num: uint256 = Receiver(receiver).callMe("hello")
 
 # transfer ETH from EOA -> this contract -> Receiver contract
 @external
