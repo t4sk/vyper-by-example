@@ -37,9 +37,9 @@ https://vyper.readthedocs.io/
   - ERC20, ERC721
   - implements
   - extract interface
-- [ ] reentrancy lock
+- reentrancy lock
 - built in functions
-  - [ ] create forwarder to
+  - create forwarder to
   - raw_call, delegate_call
   - raw_log
   - self destruct
@@ -47,7 +47,7 @@ https://vyper.readthedocs.io/
   - keccak256
   - ecrecover
   - concat
-  - [ ] sqrt
+  - sqrt
   - method_id
 - natspec
 - testing (frame work)
