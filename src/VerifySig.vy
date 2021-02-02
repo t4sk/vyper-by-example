@@ -24,4 +24,3 @@ def verify(_ethSignedHash: bytes32, _sig: Bytes[65]) -> address:
     s: uint256 = convert(slice(_sig, 32, 32), uint256)
     v: uint256 = convert(slice(_sig, 64, 1), uint256)
     return ecrecover(_ethSignedHash, v, r, s)
-
