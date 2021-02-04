@@ -19,7 +19,7 @@ def getEthSignedHash(_hash: bytes32) -> bytes32:
     )
 
 # account = your account
-# hash = output of getEthSignedHash()
+# hash = output of getHash()
 # ethereum.request({ method: "personal_sign", params: [account, hash]}).then(console.log)
 
 @external
